@@ -13,6 +13,8 @@ set autoread
 set autowrite
 au FocusLost * :wa
 
+set title
+
 set pastetoggle=<F2>
 
 set wildmenu
@@ -138,8 +140,9 @@ nnoremap <S-l> gT
 nnoremap <C-t> :tabnew<CR>
 
 nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>x :x<CR>
+
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
 "}}}
 
 " Colorscheme {{{1
