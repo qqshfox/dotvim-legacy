@@ -157,7 +157,7 @@ colorscheme inkpot
 "}}}1
 
 " NERDTree {{{
-let g:NERDTreeDirArrows=1
+let g:NERDTreeDirArrows=0
 nnoremap <leader>n :NERDTreeToggle<CR>
 "}}}
 
@@ -166,7 +166,7 @@ nnoremap <leader>t :TagbarToggle<CR>
 "}}}
 
 " Powerline {{{
-let g:Powerline_symbols="fancy"
+let g:Powerline_symbols="compatible"
 "}}}
 
 " NeoComplcache {{{
