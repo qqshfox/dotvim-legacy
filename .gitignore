@@ -1,4 +1,5 @@
 *.swp
+.netrwhist
 viminfo
 vimundo/
 vimbak/
