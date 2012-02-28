@@ -161,7 +161,10 @@ colorscheme inkpot
 
 " NERDTree {{{
 let g:NERDTreeDirArrows=1
-nnoremap <leader>n :NERDTreeToggle<CR>
+"}}}
+
+" NERDTreeTabs {{{
+nnoremap <leader>n :NERDTreeTabsToggle<CR>
 "}}}
 
 " Tagbar {{{
