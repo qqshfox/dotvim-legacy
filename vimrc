@@ -19,7 +19,7 @@ set pastetoggle=<F2>
 
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*coverage*,*.pyc,*.o,*.obj,.git,*.beam,ebin/*,*.gem
+set wildignore+=*coverage*,*.pyc,*.o,*.obj,.git,*.beam,ebin/*,*.gem,*.class
 
 set tags=./tags,tags,~/tags
 
@@ -135,8 +135,8 @@ nnoremap <silent> _ <C-w><
 nnoremap <silent> <C-=> <C-w>+
 nnoremap <silent> <C--> <C-w>-
 
-nnoremap <S-h> gt
-nnoremap <S-l> gT
+nnoremap <S-h> gT
+nnoremap <S-l> gt
 nnoremap <C-t> :tabnew<CR>
 
 nnoremap <leader>w :w<CR>
