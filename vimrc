@@ -151,10 +151,21 @@ nnoremap <C-t> :tabnew<CR>
 
 nnoremap <leader>w :w<CR>
 
+inoremap <C-a> <C-O><S-i>
+inoremap <C-e> <End>
+inoremap <C-b> <LEFT>
+inoremap <C-f> <RIGHT>
+inoremap <C-h> <BACKSPACE>
+inoremap <C-d> <DELETE>
+
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-
-inoremap <C-d> <DELETE>
+cnoremap <C-p> <UP>
+cnoremap <C-n> <DOWN>
+cnoremap <C-b> <LEFT>
+cnoremap <C-f> <RIGHT>
+cnoremap <C-h> <BACKSPACE>
+cnoremap <C-d> <DELETE>
 
 vnoremap < <gv
 vnoremap > >gv
