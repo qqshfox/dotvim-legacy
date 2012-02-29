@@ -114,9 +114,19 @@ nnoremap <leader><space> :noh<cr>
 inoremap jj <ESC>
 noremap! jj <ESC>
 
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
+inoremap <F1> <NOP>
+nnoremap <F1> <NOP>
+vnoremap <F1> <NOP>
+
+nnoremap <UP> g<UP>
+nnoremap <DOWN> g<DOWN>
+nnoremap <LEFT> g<LEFT>
+nnoremap <RIGHT> g<RIGHT>
+
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHT> <NOP>
 
 nnoremap ; :
 
@@ -143,6 +153,8 @@ nnoremap <leader>w :w<CR>
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
+
+inoremap <C-d> <DELETE>
 "}}}
 
 " Colorscheme {{{1
