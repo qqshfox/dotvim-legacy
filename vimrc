@@ -254,7 +254,7 @@ if has('ruby')
   let g:CommandTDeleteMap=['<Del>', '<C-d>']
   let g:CommandTCursorLeftMap=['<Left>', '<C-b>']
   let g:CommandTCursorRightMap=['<Right>', '<C-f>']
-  let g:CommandTCancelMap=['<Esc>']
+  let g:CommandTCancelMap=['<Esc>', '<C-c>']
 else
 " Fallback on ctrlp.vim if Ruby for Command T not available
 
