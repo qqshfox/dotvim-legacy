@@ -222,6 +222,10 @@ if has('ruby')
 " Leader Commands
   nnoremap <leader>ff :CommandT<CR>
   nnoremap <leader>fu :CommandT %%<CR>
+  let g:CommandTBackspaceMap=['<BS>', '<C-h>']
+  let g:CommandTDeleteMap=['<Del>', '<C-d>']
+  let g:CommandTCursorLeftMap=['<Left>', '<C-b>']
+  let g:CommandTCursorRightMap=['<Right>', '<C-f>']
   let g:CommandTCancelMap=['<Esc>']
 else
 " Fallback on ctrlp.vim if Ruby for Command T not available
