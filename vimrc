@@ -114,11 +114,22 @@ nnoremap <leader><space> :noh<cr>
 inoremap jj <ESC>
 noremap! jj <ESC>
 
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
+inoremap <F1> <NOP>
+nnoremap <F1> <NOP>
+vnoremap <F1> <NOP>
+
+nnoremap <UP> g<UP>
+nnoremap <DOWN> g<DOWN>
+nnoremap <LEFT> g<LEFT>
+nnoremap <RIGHT> g<RIGHT>
+
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHT> <NOP>
 
 nnoremap ; :
+nnoremap ;; :!
 
 nnoremap <tab> %
 vnoremap <tab> %
@@ -141,8 +152,24 @@ nnoremap <C-t> :tabnew<CR>
 
 nnoremap <leader>w :w<CR>
 
+inoremap <C-a> <C-O><S-i>
+inoremap <C-e> <End>
+inoremap <C-b> <LEFT>
+inoremap <C-f> <RIGHT>
+inoremap <C-h> <BACKSPACE>
+inoremap <C-d> <DELETE>
+
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
+cnoremap <C-p> <UP>
+cnoremap <C-n> <DOWN>
+cnoremap <C-b> <LEFT>
+cnoremap <C-f> <RIGHT>
+cnoremap <C-h> <BACKSPACE>
+cnoremap <C-d> <DELETE>
+
+vnoremap < <gv
+vnoremap > >gv
 "}}}
 
 " Colorscheme {{{1
@@ -161,6 +188,7 @@ colorscheme inkpot
 
 " NERDTree {{{
 let g:NERDTreeDirArrows=0
+let g:NERDTreeChDirMode=2
 "}}}
 
 " NERDTreeTabs {{{
@@ -222,6 +250,10 @@ if has('ruby')
 " Leader Commands
   nnoremap <leader>ff :CommandT<CR>
   nnoremap <leader>fu :CommandT %%<CR>
+  let g:CommandTBackspaceMap=['<BS>', '<C-h>']
+  let g:CommandTDeleteMap=['<Del>', '<C-d>']
+  let g:CommandTCursorLeftMap=['<Left>', '<C-b>']
+  let g:CommandTCursorRightMap=['<Right>', '<C-f>']
   let g:CommandTCancelMap=['<Esc>']
 else
 " Fallback on ctrlp.vim if Ruby for Command T not available
