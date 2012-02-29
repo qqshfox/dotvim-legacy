@@ -133,3 +133,6 @@
 [submodule "bundle/objc_matchbracket"]
 	path = bundle/objc_matchbracket
 	url = https://github.com/qqshfox/objc_matchbracket.git
+[submodule "bundle/mru.vim"]
+	path = bundle/mru.vim
+	url = https://github.com/vim-scripts/mru.vim.git
