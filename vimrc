@@ -129,6 +129,7 @@ inoremap <LEFT> <NOP>
 inoremap <RIGHT> <NOP>
 
 nnoremap ; :
+nnoremap ;; :!
 
 nnoremap <tab> %
 vnoremap <tab> %
@@ -187,6 +188,7 @@ colorscheme inkpot
 
 " NERDTree {{{
 let g:NERDTreeDirArrows=1
+let g:NERDTreeChDirMode=2
 "}}}
 
 " NERDTreeTabs {{{
