@@ -155,6 +155,9 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
 inoremap <C-d> <DELETE>
+
+vnoremap < <gv
+vnoremap > >gv
 "}}}
 
 " Colorscheme {{{1
