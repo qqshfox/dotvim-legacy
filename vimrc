@@ -363,4 +363,8 @@ nnoremap <Leader>a> :Tabularize /=>\zs<CR>
 vnoremap <Leader>a> :Tabularize /=>\zs<CR>
 "}}}
 
+" MRU {{{
+let MRU_File = $HOME . '/.vim/vim_mru_files'
+"}}}
+
 " vim: foldmethod=marker
