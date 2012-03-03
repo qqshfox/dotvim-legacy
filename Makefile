@@ -12,8 +12,10 @@ command-t: submodules
 nerdtree-tabs: submodules
 	ln -sf bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim bundle/nerdtree/nerdtree_plugin/
 
+current_path=$(shell pwd)
 install: all
-	ln -sf ~/.vim/vimrc ../.vimrc
+	ln -sf ${current_path} ~/.vim
+	ln -sf ~/.vim/vimrc ~/.vimrc
 
 clean:
 	rm -rf vimundo vimbak vimswp
