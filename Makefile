@@ -1,3 +1,5 @@
+.PHONY: all dirs submodules command-t nerdtree-tabs install clean
+
 all: dirs submodules command-t nerdtree-tabs
 
 dirs:
@@ -19,3 +21,5 @@ install: all
 
 clean:
 	rm -rf vimundo vimbak vimswp
+	rm -rf ~/.vim
+	rm -rf ~/.vimrc
