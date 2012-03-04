@@ -179,6 +179,12 @@ nnoremap <Leader>fn :cn<CR>
 nnoremap <Leader>fp :cp<CR>
 "}}}
 
+" Completion {{{
+" close scratch preview when a selection is made
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"}}}
+
 " Colorscheme {{{1
 set background=dark
 
