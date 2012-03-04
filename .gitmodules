@@ -145,3 +145,6 @@
 [submodule "bundle/vim-tmux"]
 	path = bundle/vim-tmux
 	url = https://github.com/qqshfox/vim-tmux.git
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete.git
