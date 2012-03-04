@@ -171,7 +171,7 @@ cnoremap <C-d> <DELETE>
 vnoremap < <gv
 vnoremap > >gv
 
-map <C-]> g<C-]>
+nnoremap <C-]> g<C-]>
 "}}}
 
 " Colorscheme {{{1
