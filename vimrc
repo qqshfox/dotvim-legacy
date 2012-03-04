@@ -348,8 +348,8 @@ nnoremap <leader>gr :GitGrep <C-R><C-W><CR>
 "}}}
 
 " Togglelist {{{
-nnoremap <script> <silent> <leader>Q :call ToggleQuickfixList()<CR>
-nnoremap <script> <silent> <leader>L :call ToggleLocationList()<CR>
+nnoremap <script> <silent> <leader>fw :call ToggleQuickfixList()<CR>
+nnoremap <script> <silent> <leader>fl :call ToggleLocationList()<CR>
 "}}}
 
 " Tabularize {{{
