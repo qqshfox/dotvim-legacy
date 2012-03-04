@@ -145,6 +145,7 @@ nnoremap <silent> + <C-w>>
 nnoremap <silent> _ <C-w><
 nnoremap <silent> <C-=> <C-w>+
 nnoremap <silent> <C--> <C-w>-
+nnoremap <silent> <Leader>w= :wincmd =<CR>
 
 nnoremap <S-h> gT
 nnoremap <S-l> gt
@@ -171,7 +172,10 @@ cnoremap <C-d> <DELETE>
 vnoremap < <gv
 vnoremap > >gv
 
-map <C-]> g<C-]>
+nnoremap <C-]> g<C-]>
+
+nnoremap <Leader>fn :cn<CR>
+nnoremap <Leader>fp :cp<CR>
 "}}}
 
 " Colorscheme {{{1
