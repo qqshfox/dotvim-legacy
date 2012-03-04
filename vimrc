@@ -145,6 +145,7 @@ nnoremap <silent> + <C-w>>
 nnoremap <silent> _ <C-w><
 nnoremap <silent> <C-=> <C-w>+
 nnoremap <silent> <C--> <C-w>-
+nnoremap <silent> <Leader>w= :wincmd =<CR>
 
 nnoremap <S-h> gT
 nnoremap <S-l> gt
