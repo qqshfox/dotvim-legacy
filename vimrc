@@ -172,6 +172,9 @@ vnoremap < <gv
 vnoremap > >gv
 
 nnoremap <C-]> g<C-]>
+
+nnoremap <Leader>fn :cn<CR>
+nnoremap <Leader>fp :cp<CR>
 "}}}
 
 " Colorscheme {{{1
