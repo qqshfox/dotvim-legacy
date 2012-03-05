@@ -179,6 +179,12 @@ nnoremap <Leader>fn :cn<CR>
 nnoremap <Leader>fp :cp<CR>
 "}}}
 
+" Completion {{{
+" close scratch preview when a selection is made
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"}}}
+
 " Colorscheme {{{1
 set background=dark
 
@@ -245,49 +251,21 @@ let syntastic_enable_signs=1
 
 " Command-T and CtrlP {{{
 if has('ruby')
-" We've got Ruby, use Command T
+  let g:CommandTMaxHeight = 10
 
-" Conditional Mappings
-  if has("gui_macvim")
-    nnoremap <silent><D-t> :CommandT<CR>
-  else
-    nnoremap <silent><M-t> :CommandT<CR>
-  endif
-
-" Leader Commands
   nnoremap <leader>ff :CommandT<CR>
   nnoremap <leader>fu :CommandT %%<CR>
+  nnoremap <leader>fb :CommandTBuffer<CR>
   let g:CommandTBackspaceMap=['<BS>', '<C-h>']
   let g:CommandTDeleteMap=['<Del>', '<C-d>']
   let g:CommandTCursorLeftMap=['<Left>', '<C-b>']
   let g:CommandTCursorRightMap=['<Right>', '<C-f>']
   let g:CommandTCancelMap=['<Esc>', '<C-c>']
 else
-" Fallback on ctrlp.vim if Ruby for Command T not available
+  let g:ctrlp_max_height = 10
 
-" Conditional Mappings
-  if has("gui_macvim")
-    let g:ctrlp_map = '<D-t>'
-  else
-    let g:ctrlp_map = '<M-t>'
-  endif
-
-" Leader Commands
   nnoremap <leader>ff :CtrlPRoot<CR>
 endif
-
-" Ensure max height isn't too large. (for performance)
-let g:ctrlp_max_height = 10
-let g:CommandTMaxHeight = 10
-
-" Mapping from ctrlp we always use
-if has('gui_macvim')
-  nnoremap <silent><D-u> :CtrlPCurFile<CR>
-  nnoremap <silent><D-y> :CtrlPMRUFiles<CR>
-else
-  nnoremap <silent><M-u> :CtrlPCurFile<CR>
-  nnoremap <silent><M-y> :CtrlPMRUFiles<CR>
-end
 "}}}
 
 " Ruby {{{
