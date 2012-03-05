@@ -81,9 +81,7 @@ set cursorline
 set colorcolumn=+1,+41
 
 set list
-set listchars=tab:>\ ,trail:-
-set listchars+=extends:>,precedes:<
-set listchars+=nbsp:+
+set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
 
 set scrolloff=3
 
