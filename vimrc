@@ -77,13 +77,13 @@ set textwidth=79
 " Visibile {{{
 set number
 set cursorline
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
 
 set colorcolumn=+1,+41
 
 set list
-set listchars=tab:>\ ,trail:-
-set listchars+=extends:>,precedes:<
-set listchars+=nbsp:+
+set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
 
 set scrolloff=3
 
@@ -340,10 +340,10 @@ nnoremap <Leader>a= :Tabularize /=<CR>
 vnoremap <Leader>a= :Tabularize /=<CR>
 nnoremap <Leader>a: :Tabularize /:\zs<CR>
 vnoremap <Leader>a: :Tabularize /:\zs<CR>
-nnoremap <Leader>a, :Tabularize /,\zs<CR>
-vnoremap <Leader>a, :Tabularize /,\zs<CR>
-nnoremap <Leader>a> :Tabularize /=>\zs<CR>
-vnoremap <Leader>a> :Tabularize /=>\zs<CR>
+nnoremap <Leader>a, :Tabularize /,<CR>
+vnoremap <Leader>a, :Tabularize /,<CR>
+nnoremap <Leader>a> :Tabularize /=><CR>
+vnoremap <Leader>a> :Tabularize /=><CR>
 "}}}
 
 " MRU {{{
