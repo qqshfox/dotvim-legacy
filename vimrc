@@ -83,7 +83,9 @@ autocmd WinLeave * setlocal nocursorline
 set colorcolumn=+1,+41
 
 set list
-set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
+set listchars=tab:>\ ,trail:-
+set listchars+=extends:>,precedes:<
+set listchars+=nbsp:+
 
 set scrolloff=3
 
