@@ -77,6 +77,8 @@ set textwidth=79
 " Visibile {{{
 set number
 set cursorline
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
 
 set colorcolumn=+1,+41
 
