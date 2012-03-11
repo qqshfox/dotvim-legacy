@@ -350,4 +350,16 @@ vnoremap <Leader>a> :Tabularize /=><CR>
 let MRU_File = $HOME . '/.vim/vim_mru_files'
 "}}}
 
+" FSwitch {{{
+nnoremap <silent> <Leader>of :FSHere<cr>
+nnoremap <silent> <Leader>ol :FSRight<cr>
+nnoremap <silent> <Leader>oL :FSSplitRight<cr>
+nnoremap <silent> <Leader>oh :FSLeft<cr>
+nnoremap <silent> <Leader>oH :FSSplitLeft<cr>
+nnoremap <silent> <Leader>ok :FSAbove<cr>
+nnoremap <silent> <Leader>oK :FSSplitAbove<cr>
+nnoremap <silent> <Leader>oj :FSBelow<cr>
+nnoremap <silent> <Leader>oJ :FSSplitBelow<cr>
+"}}}
+
 " vim: foldmethod=marker
