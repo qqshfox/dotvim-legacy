@@ -132,8 +132,9 @@ inoremap <RIGHT> <NOP>
 nnoremap ; :
 nnoremap ;; :!
 
-nnoremap <tab> %
-vnoremap <tab> %
+" Conflict with
+"nnoremap <tab> %
+"vnoremap <tab> %
 
 nnoremap <leader>ws :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>v V`]
