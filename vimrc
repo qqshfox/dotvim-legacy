@@ -50,6 +50,9 @@ autocmd bufwritepost {.vimrc,vimrc} source %
 autocmd BufNewFile,BufEnter * set formatoptions-=ro
 
 command! W exec 'w !sudo tee % > /dev/null' | e!
+
+set splitright
+set splitbelow
 "}}}
 
 " GUI {{{
@@ -134,8 +137,9 @@ inoremap <RIGHT> <NOP>
 nnoremap ; :
 nnoremap ;; :!
 
-nnoremap <tab> %
-vnoremap <tab> %
+" Conflict with
+"nnoremap <tab> %
+"vnoremap <tab> %
 
 nnoremap <leader>ws :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>v V`]
@@ -212,6 +216,41 @@ nnoremap <leader>n :NERDTreeTabsToggle<CR>
 
 " Tagbar {{{
 nnoremap <leader>t :TagbarToggle<CR>
+
+" add a definition for Objective-C to tagbar
+let g:tagbar_type_objc = {
+    \ 'ctagstype' : 'ObjectiveC',
+    \ 'kinds'     : [
+        \ 'i:interface',
+        \ 'I:implementation',
+        \ 'p:Protocol',
+        \ 'm:Object_method',
+        \ 'c:Class_method',
+        \ 'v:Global_variable',
+        \ 'F:Object field',
+        \ 'f:function',
+        \ 'p:property',
+        \ 't:type_alias',
+        \ 's:type_structure',
+        \ 'e:enumeration',
+        \ 'M:preprocessor_macro',
+    \ ],
+    \ 'sro'        : ' ',
+    \ 'kind2scope' : {
+        \ 'i' : 'interface',
+        \ 'I' : 'implementation',
+        \ 'p' : 'Protocol',
+        \ 's' : 'type_structure',
+        \ 'e' : 'enumeration'
+    \ },
+    \ 'scope2kind' : {
+        \ 'interface'      : 'i',
+        \ 'implementation' : 'I',
+        \ 'Protocol'       : 'p',
+        \ 'type_structure' : 's',
+        \ 'enumeration'    : 'e'
+    \ }
+\ }
 "}}}
 
 " Powerline {{{
@@ -350,6 +389,18 @@ vnoremap <Leader>a> :Tabularize /=><CR>
 
 " MRU {{{
 let MRU_File = $HOME . '/.vim/vim_mru_files'
+"}}}
+
+" FSwitch {{{
+nnoremap <silent> <Leader>of :FSHere<cr>
+nnoremap <silent> <Leader>ol :FSRight<cr>
+nnoremap <silent> <Leader>oL :FSSplitRight<cr>
+nnoremap <silent> <Leader>oh :FSLeft<cr>
+nnoremap <silent> <Leader>oH :FSSplitLeft<cr>
+nnoremap <silent> <Leader>ok :FSAbove<cr>
+nnoremap <silent> <Leader>oK :FSSplitAbove<cr>
+nnoremap <silent> <Leader>oj :FSBelow<cr>
+nnoremap <silent> <Leader>oJ :FSSplitBelow<cr>
 "}}}
 
 " vim: foldmethod=marker
