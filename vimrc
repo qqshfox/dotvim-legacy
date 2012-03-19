@@ -401,4 +401,8 @@ nnoremap <silent> <Leader>oj :FSBelow<cr>
 nnoremap <silent> <Leader>oJ :FSSplitBelow<cr>
 "}}}
 
+" Octopress {{{
+autocmd BufNewFile,BufRead *.markdown set filetype=octopress
+"}}}
+
 " vim: foldmethod=marker
