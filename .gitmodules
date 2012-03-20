@@ -151,3 +151,6 @@
 [submodule "bundle/vim-fswitch"]
 	path = bundle/vim-fswitch
 	url = https://github.com/derekwyatt/vim-fswitch.git
+[submodule "bundle/vim-octopress"]
+	path = bundle/vim-octopress
+	url = https://github.com/tangledhelix/vim-octopress.git
