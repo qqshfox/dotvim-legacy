@@ -62,6 +62,7 @@ set gfn=Monaco\ for\ Powerline:h12
 
 " File format {{{
 set encoding=utf-8
+set fileencoding=utf-8
 
 set tabstop=4
 set shiftwidth=4
