@@ -84,7 +84,9 @@ set cursorline
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
-set colorcolumn=+1,+41
+if version >= 703
+  set colorcolumn=+1,+41
+endif
 
 set list
 set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
