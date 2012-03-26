@@ -76,6 +76,7 @@ set smartindent
 
 set wrap
 set textwidth=79
+autocmd FileType markdown setlocal textwidth=0
 "}}}
 
 " Visibile {{{
@@ -86,6 +87,7 @@ autocmd WinLeave * setlocal nocursorline
 
 if version >= 703
   set colorcolumn=+1,+41
+  autocmd FileType markdown setlocal colorcolumn=0
 endif
 
 set list
