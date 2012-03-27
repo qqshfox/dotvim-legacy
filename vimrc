@@ -76,6 +76,7 @@ set smartindent
 
 set wrap
 set textwidth=79
+autocmd FileType markdown setlocal textwidth=0
 "}}}
 
 " Visibile {{{
@@ -84,7 +85,10 @@ set cursorline
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
-set colorcolumn=+1,+41
+if version >= 703
+  set colorcolumn=+1,+41
+  autocmd FileType markdown setlocal colorcolumn=0
+endif
 
 set list
 set listchars=tab:>\ ,trail:-
