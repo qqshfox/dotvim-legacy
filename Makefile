@@ -13,7 +13,7 @@ command-t: submodules
 	cd bundle/Command-T && bundle install && rake make
 
 nerdtree-tabs: submodules
-	ln -sf bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim bundle/nerdtree/nerdtree_plugin/
+	ln -sf ~/.vim/bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim ~/.vim/bundle/nerdtree/nerdtree_plugin/
 
 update: submodules
 
