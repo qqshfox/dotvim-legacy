@@ -23,6 +23,6 @@ install: all
 	ln -sf ~/.vim/vimrc ~/.vimrc
 
 clean:
-	rm -rf vimundo vimbak vimswp
-	rm -rf ~/.vim
-	rm -rf ~/.vimrc
+	rm -rf vimundo vimbak vimswp viminfo vim_mru_files
+	[ -h ~/.vim ] && rm -f ~/.vim
+	[ -h ~/.vimrc ] && rm -f ~/.vimrc
