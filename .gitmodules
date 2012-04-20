@@ -160,3 +160,6 @@
 [submodule "bundle/vitality.vim"]
 	path = bundle/vitality.vim
 	url = https://github.com/sjl/vitality.vim.git
+[submodule "bundle/splice.vim"]
+	path = bundle/splice.vim
+	url = https://github.com/sjl/splice.vim.git
