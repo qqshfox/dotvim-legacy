@@ -13,7 +13,7 @@ command-t: submodules
 	cd bundle/Command-T && bundle install && rake make
 
 nerdtree-tabs: submodules
-	ln -sf bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim bundle/nerdtree/nerdtree_plugin/
+	ln -sf ~/.vim/bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim ~/.vim/bundle/nerdtree/nerdtree_plugin/
 
 update: submodules
 
@@ -23,6 +23,6 @@ install: all
 	ln -sf ~/.vim/vimrc ~/.vimrc
 
 clean:
-	rm -rf vimundo vimbak vimswp
-	rm -rf ~/.vim
-	rm -rf ~/.vimrc
+	rm -rf vimundo vimbak vimswp viminfo vim_mru_files
+	[ -h ~/.vim ] && rm -f ~/.vim
+	[ -h ~/.vimrc ] && rm -f ~/.vimrc
