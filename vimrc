@@ -410,4 +410,11 @@ nnoremap <silent> <Leader>oJ :FSSplitBelow<cr>
 autocmd BufNewFile,BufRead *.markdown set filetype=octopress
 "}}}
 
+" Splice{{{
+let g:splice_initial_scrollbind_grid = 1
+let g:splice_initial_scrollbind_loupe = 1
+let g:splice_initial_scrollbind_compare = 1
+let g:splice_initial_scrollbind_path = 1
+"}}}
+
 " vim: foldmethod=marker
