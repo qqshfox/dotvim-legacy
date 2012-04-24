@@ -4,7 +4,7 @@ Hanfei Shen's dotvim files
 Installation
 ------------
 
-```sh
+```
 git clone https://github.com/qqshfox/dotvim.git ~/.vim
 cd ~/.vim
 make install
@@ -15,6 +15,14 @@ Dependencies
 
 * Vim 7.3
 * Ruby and Vim 7.3 with ruby (optinal): Command-T and Lusty need this
+
+Updating
+--------
+
+```
+git pull
+make update
+```
 
 Some plugins need
 -----------------
@@ -33,7 +41,7 @@ Some plugins need
 Notice
 ------
 
-* You should check whether the current ruby matches the vim before ```make install```, or vim will crash when you use Command-T.
+* You should check whether the current ruby matches the vim before `make install`, or vim will crash when you use Command-T.
 
 
 Screenshots

@@ -163,3 +163,6 @@
 [submodule "bundle/splice.vim"]
 	path = bundle/splice.vim
 	url = https://github.com/sjl/splice.vim.git
+[submodule "bundle/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
