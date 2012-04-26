@@ -422,4 +422,7 @@ let g:splice_initial_scrollbind_path = 1
 let g:clang_auto_select = 1
 "}}}
 
+" Vitality{{{
+let g:vitality_fix_focus = 0
+"}}}
 " vim: foldmethod=marker
