@@ -189,6 +189,7 @@ nnoremap <Leader>fp :cp<CR>
 "}}}
 
 " Completion {{{
+set completeopt-=preview
 " close scratch preview when a selection is made
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -415,6 +416,10 @@ let g:splice_initial_scrollbind_grid = 1
 let g:splice_initial_scrollbind_loupe = 1
 let g:splice_initial_scrollbind_compare = 1
 let g:splice_initial_scrollbind_path = 1
+"}}}
+
+" Clang Completion{{{
+let g:clang_auto_select = 1
 "}}}
 
 " vim: foldmethod=marker
