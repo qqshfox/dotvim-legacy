@@ -14,7 +14,7 @@ Dependencies
 ------------
 
 * Vim 7.3
-* Ruby and Vim 7.3 with ruby (optinal): Command-T and Lusty need this
+* Ruby and Vim 7.3 with ruby support (+ruby) (optional): Command-T and Lusty need these
 
 Updating
 --------
