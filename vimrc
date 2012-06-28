@@ -426,4 +426,9 @@ let g:clang_auto_select = 1
 " Vitality{{{
 let g:vitality_fix_focus = 0
 "}}}
+
+" C++ {{{
+autocmd FileType c,cpp setlocal ts=2 sts=2 sw=2
+"}}}
+
 " vim: foldmethod=marker
