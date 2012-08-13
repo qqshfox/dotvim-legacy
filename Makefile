@@ -14,7 +14,7 @@ submodules:
 command-t: submodules
 	cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
-update: submodules
+update: submodules command-t
 
 install: all
 	ln -sf ${current_path} ~/.vim
