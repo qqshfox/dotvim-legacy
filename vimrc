@@ -438,4 +438,9 @@ let g:vitality_fix_focus = 0
 autocmd FileType c,cpp setlocal ts=2 sts=2 sw=2
 "}}}
 
+" NeoComplcache & Clang Complete {{{
+let g:neocomplcache_force_overwrite_completefunc = 1
+let g:clang_complete_auto = 1
+"}}}
+
 " vim: foldmethod=marker

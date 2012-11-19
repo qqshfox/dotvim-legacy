@@ -172,3 +172,6 @@
 [submodule "bundle/vim-puppet"]
 	path = bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "bundle/neocomplcache-clang_complete"]
+	path = bundle/neocomplcache-clang_complete
+	url = https://github.com/osyo-manga/neocomplcache-clang_complete.git
