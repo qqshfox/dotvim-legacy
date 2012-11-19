@@ -293,6 +293,7 @@ let g:yankring_history_dir = '$VIM'
 
 " Syntastic {{{
 let g:syntastic_check_on_open=1
+let g:syntastic_cpp_include_dirs = ['/opt/local/include']
 "}}}
 
 " Command-T and CtrlP {{{
@@ -397,6 +398,8 @@ let MRU_File = $HOME . '/.vim/vim_mru_files'
 "}}}
 
 " FSwitch {{{
+au BufEnter *.h let b:fswitchdst  = 'cpp,cc,c'
+au BufEnter *.cc let b:fswitchdst  = 'h,hpp'
 nnoremap <silent> <Leader>of :FSHere<cr>
 nnoremap <silent> <Leader>ol :FSRight<cr>
 nnoremap <silent> <Leader>oL :FSSplitRight<cr>
@@ -420,7 +423,11 @@ let g:splice_initial_scrollbind_path = 1
 "}}}
 
 " Clang Completion{{{
+let g:clang_use_library = 1
 let g:clang_auto_select = 1
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'snipmate'
+"let g:clang_snippets_engine = 'clang_complete'
 "}}}
 
 " Vitality{{{
