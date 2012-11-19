@@ -16,9 +16,6 @@
 [submodule "bundle/pyflakes-vim"]
 	path = bundle/pyflakes-vim
 	url = https://github.com/kevinw/pyflakes-vim.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
@@ -175,3 +172,24 @@
 [submodule "bundle/neocomplcache-clang_complete"]
 	path = bundle/neocomplcache-clang_complete
 	url = https://github.com/osyo-manga/neocomplcache-clang_complete.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = https://github.com/honza/snipmate-snippets.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/cSyntaxAfter"]
+	path = bundle/cSyntaxAfter
+	url = https://github.com/oblitum/cSyntaxAfter.git
+[submodule "bundle/SingleCompile"]
+	path = bundle/SingleCompile
+	url = https://github.com/xuhdev/SingleCompile.git
+[submodule "bundle/Cpp11-Syntax-Support"]
+	path = bundle/Cpp11-Syntax-Support
+	url = https://github.com/vim-scripts/Cpp11-Syntax-Support.git
