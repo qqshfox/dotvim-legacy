@@ -292,7 +292,7 @@ let g:yankring_history_dir = '$VIM'
 "}}}
 
 " Syntastic {{{
-let syntastic_enable_signs=1
+let g:syntastic_check_on_open=1
 "}}}
 
 " Command-T and CtrlP {{{
