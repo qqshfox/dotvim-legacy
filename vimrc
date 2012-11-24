@@ -294,6 +294,8 @@ let g:yankring_history_dir = '$VIM'
 " Syntastic {{{
 let g:syntastic_check_on_open=1
 let g:syntastic_cpp_include_dirs = ['/opt/local/include']
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = '-std=c++11'
 "}}}
 
 " Command-T and CtrlP {{{
