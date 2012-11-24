@@ -443,4 +443,17 @@ let g:neocomplcache_force_overwrite_completefunc = 1
 let g:clang_complete_auto = 1
 "}}}
 
+" cSyntaxAfter {{{
+"autocmd! BufRead,BufNewFile,BufEnter *.{c,cpp,cc,h,hpp,javascript} call CSyntaxAfter()
+"}}}
+
+" TagHighlight {{{
+if ! exists('g:TagHighlightSettings')
+    let g:TagHighlightSettings = {}
+endif
+let g:TagHighlightSettings['DoNotGenerateTagsIfPresent'] = 1
+let g:TagHighlightSettings['OnlyGenerateTypesIfPresent'] = 1
+autocmd BufWritePost * UpdateTypesFile
+"}}}
+
 " vim: foldmethod=marker
