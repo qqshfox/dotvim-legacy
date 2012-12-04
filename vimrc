@@ -55,6 +55,11 @@ set splitright
 set splitbelow
 "}}}
 
+" Specific VIM settings per folder {{{
+set exrc
+set secure
+"}}}
+
 " GUI {{{
 set guioptions=egmrt
 set gfn=Monaco\ for\ Powerline:h12
