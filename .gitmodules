@@ -196,3 +196,6 @@
 [submodule "bundle/autoload_cscope.vim"]
 	path = bundle/autoload_cscope.vim
 	url = https://github.com/vim-scripts/autoload_cscope.vim.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git

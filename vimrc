@@ -463,4 +463,11 @@ let g:TagHighlightSettings['OnlyGenerateTypesIfPresent'] = 1
 autocmd BufWritePost * UpdateTypesFile
 "}}}
 
+" jedi-vim {{{
+let g:jedi#goto_command = "<leader>gg"
+let g:jedi#get_definition_command = "<leader>gd"
+let g:jedi#rename_command = "<leader>rr"
+let g:jedi#related_names_command = "<leader>rn"
+"}}}
+
 " vim: foldmethod=marker
