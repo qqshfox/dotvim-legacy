@@ -263,10 +263,6 @@ let g:tagbar_type_objc = {
 \ }
 "}}}
 
-" Powerline {{{
-let g:Powerline_symbols="fancy"
-"}}}
-
 " NeoComplcache {{{
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1

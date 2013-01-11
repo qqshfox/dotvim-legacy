@@ -27,6 +27,7 @@ make update
 Some plugins need
 -----------------
 
+* [powerline][https://github.com/Lokaltog/powerline] for vim-powerline
 * ack for ack.vim
 * clang for clang_complete
 * Exuberant Ctags 5.8 for AutoTag and Tagbar
