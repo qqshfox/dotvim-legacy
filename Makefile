@@ -1,4 +1,4 @@
-.PHONY: all dirs taghighlight update_taghightlight update_submodules submodules command-t update install clean_taghighlight clean
+.PHONY: all dirs update_taghightlight update_submodules submodules command-t update install clean_taghighlight clean
 
 current_path=$(shell pwd)
 
@@ -7,17 +7,17 @@ all: dirs submodules command-t
 dirs:
 	mkdir -p vimundo vimbak vimswp
 
-taghighlight:
-	hg clone https://bitbucket.org/abudden/taghighlight bundle/TagHighlight
+bundle/TagHighlight:
+	hg clone https://bitbucket.org/abudden/taghighlight $@
 
-update_taghightlight:
+update_taghightlight: bundle/TagHighlight
 	hg pull -u bundle/TagHighlight
 
 update_submodules:
 	git submodule sync
 	git submodule update --init --recursive
 
-submodules: update_submodules taghighlight
+submodules: update_submodules bundle/TagHighlight
 
 command-t: update_submodules
 	cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
