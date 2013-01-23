@@ -38,6 +38,7 @@ Some plugins need
 * RVM for vim-rvm
 * virtualenv for vim-virtualenv
 * Erlang for vimerl
+* R & [VimCom][https://github.com/jalvesaq/VimCom.git] for Vim-R-Plugin
 
 Notice
 ------
