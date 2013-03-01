@@ -468,4 +468,8 @@ let g:jedi#rename_command = "<leader>rr"
 let g:jedi#related_names_command = "<leader>rn"
 "}}}
 
+" Powerline {{{
+set rtp+=~/.vim/powerline/powerline/bindings/vim
+"}}}
+
 " vim: foldmethod=marker
