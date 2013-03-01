@@ -128,7 +128,7 @@ nnoremap <leader><space> :noh<cr>
 
 " Mapping {{{
 inoremap jj <ESC>
-noremap! jj <ESC>
+cnoremap jj <C-c>
 
 inoremap <F1> <NOP>
 nnoremap <F1> <NOP>
