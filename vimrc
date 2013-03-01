@@ -83,6 +83,7 @@ set smartindent
 set wrap
 set textwidth=79
 autocmd FileType markdown setlocal textwidth=0
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2
 "}}}
 
 " Visibile {{{
