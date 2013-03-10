@@ -426,11 +426,10 @@ let g:splice_initial_scrollbind_path = 1
 "}}}
 
 " Clang Completion{{{
-let g:clang_use_library = 1
 let g:clang_auto_select = 1
 let g:clang_snippets = 1
-"let g:clang_snippets_engine = 'snipmate'
-let g:clang_snippets_engine = 'clang_complete'
+"let g:clang_snippets_engine = 'clang_complete'
+let g:clang_snippets_engine = 'ultisnips'
 "}}}
 
 " Vitality{{{
