@@ -428,8 +428,8 @@ let g:splice_initial_scrollbind_path = 1
 " Clang Completion{{{
 let g:clang_auto_select = 1
 let g:clang_snippets = 1
-"let g:clang_snippets_engine = 'clang_complete'
-let g:clang_snippets_engine = 'ultisnips'
+let g:clang_snippets_engine = 'clang_complete'
+"let g:clang_snippets_engine = 'ultisnips'
 "}}}
 
 " Vitality{{{
@@ -467,6 +467,11 @@ let g:jedi#related_names_command = "<leader>rn"
 
 " Powerline {{{
 set rtp+=~/.vim/powerline/powerline/bindings/vim
+"}}}
+
+" UltiSnips {{{
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "}}}
 
 " vim: foldmethod=marker
