@@ -459,6 +459,7 @@ autocmd BufWritePost * UpdateTypesFile
 "}}}
 
 " jedi-vim {{{
+let g:jedi#auto_vim_configuration = 0
 let g:jedi#goto_command = "<leader>gg"
 let g:jedi#get_definition_command = "<leader>gd"
 let g:jedi#rename_command = "<leader>rr"
