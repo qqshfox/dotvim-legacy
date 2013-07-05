@@ -297,6 +297,8 @@ let g:syntastic_check_on_open=1
 let g:syntastic_cpp_include_dirs = ['/opt/local/include']
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_c_include_dirs = ['/opt/local/include']
+let g:syntastic_c_compiler = 'clang'
 "}}}
 
 " Command-T and CtrlP {{{
