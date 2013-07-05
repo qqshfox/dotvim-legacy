@@ -261,33 +261,6 @@ let g:tagbar_type_objc = {
 \ }
 "}}}
 
-" NeoComplcache {{{
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_enable_underbar_completion = 1
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_enable_auto_select = 1
-
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-
-" Enable heavy omni completion.
-if !exists('g:neocomplcache_omni_patterns')
-  let g:neocomplcache_omni_patterns = {}
-endif
-let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-"autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
-let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
-"}}}
-
 " YankRing {{{
 let g:yankring_history_dir = '$VIM'
 "}}}
@@ -299,6 +272,7 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
 let g:syntastic_c_include_dirs = ['/opt/local/include']
 let g:syntastic_c_compiler = 'clang'
+let g:syntastic_c_compiler_options = '-std=c99'
 "}}}
 
 " Command-T and CtrlP {{{
@@ -334,25 +308,7 @@ let g:indent_guides_auto_colors = 0
 "}}}
 
 " SuperTab {{{
-let g:SuperTabDefaultCompletionType="<c-x><c-n>"
-let g:SuperTabContextDefaultCompletionType="<c-x><c-n>"
-" Use omni completion if module_name:something, for erlang:
-" (by default, supertab uses . :: ->, but not a single :
-function! SuperErlangContext()
-    let exclusions = exists('g:SuperTabContextTextFileTypeExclusions') ?
-        \ g:SuperTabContextTextFileTypeExclusions : []
-    if index(exclusions, &ft) == -1
-        let curline = getline('.')
-        let cnum = col('.')
-        let synname = synIDattr(synID(line('.'), cnum - 1, 1), 'name')
-        if curline =~ '.*\(\w\|[\])]\)\(:\)\w*\%' . cnum . 'c' && synname !~ '\(String\|Comment\)'
-            return "\<c-x>\<c-o>"
-        endif
-    endif
-    " no return will result in the evaluation of the next
-    " configured context
-endfunction
-autocmd FileType erlang let g:SuperTabCompletionContexts = ['SuperErlangContext', 's:ContextText']
+let g:SuperTabDefaultCompletionType="<c-tab>"
 "}}}
 
 " Python {{{
@@ -427,24 +383,12 @@ let g:splice_initial_scrollbind_compare = 1
 let g:splice_initial_scrollbind_path = 1
 "}}}
 
-" Clang Completion{{{
-let g:clang_auto_select = 1
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'clang_complete'
-"let g:clang_snippets_engine = 'ultisnips'
-"}}}
-
 " Vitality{{{
 let g:vitality_fix_focus = 0
 "}}}
 
 " C++ {{{
 autocmd FileType c,cpp setlocal ts=2 sts=2 sw=2
-"}}}
-
-" NeoComplcache & Clang Complete {{{
-let g:neocomplcache_force_overwrite_completefunc = 1
-let g:clang_complete_auto = 1
 "}}}
 
 " cSyntaxAfter {{{
@@ -473,8 +417,17 @@ set rtp+=~/.vim/powerline/powerline/bindings/vim
 "}}}
 
 " UltiSnips {{{
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsListSnippets = "<c-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+"}}}
+
+" YouCompleteMe {{{
+let g:ycm_key_list_select_completion = ['<C-Tab>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-S-Tab>', '<Up>']
+let g:ycm_register_as_syntastic_checker = 0
+let g:ycm_confirm_extra_conf = 0
 "}}}
 
 " vim: foldmethod=marker
