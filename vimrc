@@ -19,7 +19,7 @@ set pastetoggle=<F2>
 
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*coverage*,*.pyc,*.o,*.obj,.git,*.beam,ebin/*,*.gem,*.class
+set wildignore+=*coverage*,*.pyc,*.o,*.obj,.git,*.beam,ebin/*,*.gem,*.class,*.lo
 set wildignore+=*.log
 
 set tags=./tags,tags,~/tags
