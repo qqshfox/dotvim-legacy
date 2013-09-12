@@ -30,7 +30,6 @@ update: update_submodules command-t update_taghightlight YouCompleteMe
 install: all
 	ln -sf ${current_path} ~/.vim
 	ln -sf ~/.vim/vimrc ~/.vimrc
-	ln -sf ~/.vim/bundle/vim-nerdtree-tabs/nerdtree_plugin/vim-nerdtree-tabs.vim ~/.vim/bundle/nerdtree/nerdtree_plugin/
 
 clean_taghighlight:
 	rm -rf bundle/TagHighlight
