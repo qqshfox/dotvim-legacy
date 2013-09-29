@@ -99,7 +99,7 @@
 	url = https://github.com/msanders/cocoa.vim.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = https://github.com/hallison/vim-markdown.git
+	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/git-grep-vim"]
 	path = bundle/git-grep-vim
 	url = https://github.com/tjennings/git-grep-vim.git

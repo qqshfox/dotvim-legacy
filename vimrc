@@ -372,7 +372,8 @@ nnoremap <silent> <Leader>oj :FSBelow<cr>
 nnoremap <silent> <Leader>oJ :FSSplitBelow<cr>
 "}}}
 
-" Octopress {{{
+" Markdown & Octopress {{{
+let g:vim_markdown_folding_disabled = 1
 autocmd BufNewFile,BufRead *.markdown set filetype=octopress
 "}}}
 
