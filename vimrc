@@ -269,10 +269,10 @@ let g:yankring_history_dir = '$VIM'
 let g:syntastic_check_on_open=1
 let g:syntastic_cpp_include_dirs = ['/opt/local/include']
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++ -Wall -Wextra'
 let g:syntastic_c_include_dirs = ['/opt/local/include']
 let g:syntastic_c_compiler = 'clang'
-let g:syntastic_c_compiler_options = '-std=c99'
+let g:syntastic_c_compiler_options = '-std=c99 -Wall -Wextra'
 "}}}
 
 " Command-T and CtrlP {{{
@@ -431,6 +431,7 @@ let g:ycm_key_list_select_completion = ['<C-Tab>', '<Down>']
 "let g:ycm_key_list_previous_completion = ['<C-S-Tab>', '<Up>']
 let g:ycm_register_as_syntastic_checker = 0
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 "}}}
 
 " vim: foldmethod=marker

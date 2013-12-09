@@ -27,7 +27,7 @@ make update
 Some plugins need
 -----------------
 
-* [powerline][https://github.com/Lokaltog/powerline] for vim-powerline
+* [powerline](https://github.com/Lokaltog/powerline) for vim-powerline
 * ack for ack.vim
 * Exuberant Ctags 5.8 for AutoTag and Tagbar
 * Exuberant Ctags head for Tagbar with Objective-C
@@ -37,7 +37,7 @@ Some plugins need
 * RVM for vim-rvm
 * virtualenv for vim-virtualenv
 * Erlang for vimerl
-* R & [VimCom][https://github.com/jalvesaq/VimCom.git] for Vim-R-Plugin
+* R & [VimCom](https://github.com/jalvesaq/VimCom.git) for Vim-R-Plugin
 
 Notice
 ------
