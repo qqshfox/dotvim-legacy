@@ -136,8 +136,8 @@ vnoremap <F1> <NOP>
 
 nnoremap <UP> g<UP>
 nnoremap <DOWN> g<DOWN>
-nnoremap <LEFT> g<LEFT>
-nnoremap <RIGHT> g<RIGHT>
+"nnoremap <LEFT> g<LEFT>
+"nnoremap <RIGHT> g<RIGHT>
 
 inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
@@ -269,7 +269,7 @@ let g:yankring_history_dir = '$VIM'
 let g:syntastic_check_on_open=1
 let g:syntastic_cpp_include_dirs = ['/opt/local/include']
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 let g:syntastic_c_include_dirs = ['/opt/local/include']
 let g:syntastic_c_compiler = 'clang'
 let g:syntastic_c_compiler_options = '-std=c99'
@@ -308,7 +308,7 @@ let g:indent_guides_auto_colors = 0
 "}}}
 
 " SuperTab {{{
-let g:SuperTabDefaultCompletionType="<c-tab>"
+let g:SuperTabDefaultCompletionType = "<C-Tab>"
 "}}}
 
 " Python {{{
@@ -390,6 +390,8 @@ let g:vitality_fix_focus = 0
 
 " C++ {{{
 autocmd FileType c,cpp setlocal ts=2 sts=2 sw=2
+autocmd FileType c,cpp inoremap .. ->
+
 "}}}
 
 " cSyntaxAfter {{{
@@ -426,7 +428,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " YouCompleteMe {{{
 let g:ycm_key_list_select_completion = ['<C-Tab>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-S-Tab>', '<Up>']
+"let g:ycm_key_list_previous_completion = ['<C-S-Tab>', '<Up>']
 let g:ycm_register_as_syntastic_checker = 0
 let g:ycm_confirm_extra_conf = 0
 "}}}

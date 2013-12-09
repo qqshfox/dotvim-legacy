@@ -1,0 +1,45 @@
+snippet once "Include header once only guard" !
+#ifndef ${1:`!p
+if not snip.c:
+    name = re.sub(r'[^A-Za-z0-9]+','_', snip.fn).upper()
+    snip.rv = '%s_' % name
+else:
+    snip.rv = snip.c`}
+#define $1
+
+${0}
+
+#endif  // $1
+endsnippet
+
+snippet auth "write the author info"
+/**
+ * @file    ${1:`!p
+if not snip.c:
+    snip.rv = snip.fn
+else:
+    snip.rv = snip.c`}
+ * @author  ${2:Hanfei Shen <hanfei.shen@saybot.com>}
+ * @date    ${3:`!p
+if not snip.c:
+    import datetime
+    snip.rv = datetime.date.today().isoformat()
+else:
+    snip.rv = snip.c`}
+ * @brief   ${4:$1}
+ */
+
+endsnippet
+
+snippet fori "for int loop (fori)" !
+for (${4:size_t} ${2:i} = 0; $2 < ${1:count}; ${3:$2++}) {
+  ${VISUAL}${0:${VISUAL/(.*)/(?1::\/* code *\/)/}}
+}
+endsnippet
+
+snippet main "main() (main)" !
+int main(int argc, char *argv[]) {
+  ${VISUAL}${0:${VISUAL/(.*)/(?1::\/* code *\/)/}}
+  return 0;
+}
+endsnippet
