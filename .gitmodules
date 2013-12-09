@@ -166,9 +166,6 @@
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/cSyntaxAfter"]
-	path = bundle/cSyntaxAfter
-	url = https://github.com/oblitum/cSyntaxAfter.git
 [submodule "bundle/SingleCompile"]
 	path = bundle/SingleCompile
 	url = https://github.com/xuhdev/SingleCompile.git
