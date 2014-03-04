@@ -205,3 +205,6 @@
 [submodule "bundle/file-line"]
 	path = bundle/file-line
 	url = https://github.com/bogado/file-line
+[submodule "bundle/cpp-vim"]
+	path = bundle/cpp-vim
+	url = https://github.com/vim-jp/cpp-vim
