@@ -425,6 +425,7 @@ let g:ycm_key_list_select_completion = ['<C-Tab>', '<Down>']
 "let g:ycm_key_list_previous_completion = ['<C-S-Tab>', '<Up>']
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 "}}}
 
 " vim: foldmethod=marker
