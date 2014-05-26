@@ -210,10 +210,17 @@ set background=dark
 "colorscheme solarized
 "}}}2
 
-" Inkpot {{{2
-let g:inkpot_black_background = 0
-colorscheme inkpot
-"}}}2
+if has('gui_running')
+    " Molokai {{{2
+    colorscheme molokai
+    "}}}2
+else
+    " Inkpot {{{2
+    let g:inkpot_black_background = 0
+    colorscheme inkpot
+    "}}}2
+endif
+
 "}}}1
 
 " NERDTree {{{
