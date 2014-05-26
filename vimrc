@@ -273,6 +273,7 @@ let g:yankring_history_dir = '$VIM'
 
 " Syntastic {{{
 let g:syntastic_check_on_open=1
+let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['c', 'cpp', 'objc']}
 "}}}
 
 " Command-T and CtrlP {{{
