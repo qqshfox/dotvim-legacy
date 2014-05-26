@@ -208,3 +208,6 @@
 [submodule "bundle/cpp-vim"]
 	path = bundle/cpp-vim
 	url = https://github.com/vim-jp/cpp-vim
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets

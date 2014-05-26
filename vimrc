@@ -308,10 +308,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 "}}}
 
-" SuperTab {{{
-let g:SuperTabDefaultCompletionType = "<C-Tab>"
-"}}}
-
 " Python {{{
 autocmd FileType python let python_highlight_all=1
 "}}}
@@ -421,15 +417,14 @@ set rtp+=~/.vim/powerline/powerline/bindings/vim
 "}}}
 
 " UltiSnips {{{
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsListSnippets = "<c-tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 "}}}
 
 " YouCompleteMe {{{
-let g:ycm_key_list_select_completion = ['<C-Tab>', '<Down>']
-"let g:ycm_key_list_previous_completion = ['<C-S-Tab>', '<Up>']
+let g:ycm_key_list_select_completion = []
+let g:ycm_key_list_previous_completion = []
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
