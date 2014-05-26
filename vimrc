@@ -46,7 +46,6 @@ set foldmethod=marker
 set foldopen=block,hor,mark,percent,quickfix,tag
 
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-autocmd bufwritepost {.vimrc,vimrc} source %
 autocmd BufNewFile,BufEnter * set formatoptions-=ro
 
 command! W exec 'w !sudo tee % > /dev/null' | e!
