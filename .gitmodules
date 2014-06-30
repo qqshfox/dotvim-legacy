@@ -211,3 +211,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = https://github.com/mustache/vim-mustache-handlebars.git
