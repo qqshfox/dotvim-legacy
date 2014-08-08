@@ -318,6 +318,7 @@ nnoremap <leader>ud :GundoToggle<CR>
 
 " Ack {{{
 nnoremap <leader>a :Ack<space>
+let g:ackprg='ag --column'
 "}}}
 
 " Fugitive {{{
