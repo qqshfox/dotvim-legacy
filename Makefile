@@ -23,7 +23,7 @@ command-t: update_submodules
 	cd bundle/Command-T/ruby/command-t && ruby extconf.rb && make
 
 YouCompleteMe:
-	cd bundle/YouCompleteMe && ./install.sh --clang-completer
+	cd bundle/YouCompleteMe && ./install.sh --clang-completer --system-libclang
 
 update: update_submodules command-t update_taghightlight YouCompleteMe
 
