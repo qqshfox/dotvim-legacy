@@ -439,4 +439,8 @@ endif
 au! BufRead,BufNewFile *.m,*.mm setfiletype objc
 "}}}
 
+" Javascript {{{
+au BufNewFile,BufRead *.es6 setf javascript
+"}}}
+
 " vim: foldmethod=marker
