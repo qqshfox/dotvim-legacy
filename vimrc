@@ -69,9 +69,9 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,default,gbk,latin1
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set smarttab
 
@@ -80,9 +80,7 @@ set cindent
 set smartindent
 
 set wrap
-set textwidth=79
-autocmd FileType markdown setlocal textwidth=0
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2
+set textwidth=0
 "}}}
 
 " Visibile {{{
@@ -298,8 +296,6 @@ endif
 " Ruby {{{
 let ruby_enable_balloons=0
 
-autocmd FileType ruby,eruby setlocal ts=2 sts=2 sw=2
-
 au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru} set ft=ruby
 "}}}
 
@@ -387,7 +383,6 @@ let g:vitality_fix_focus = 0
 "}}}
 
 " C++ {{{
-autocmd FileType c,cpp setlocal ts=2 sts=2 sw=2
 autocmd FileType c,cpp inoremap .. ->
 
 "}}}
