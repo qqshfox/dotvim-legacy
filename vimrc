@@ -223,6 +223,7 @@ endif
 " NERDTree {{{
 let g:NERDTreeDirArrows=1
 let g:NERDTreeChDirMode=2
+let g:NERDTreeBookmarksFile="~/.vim/NERDTreeBookmarks"
 nnoremap <leader>n :NERDTreeToggle<CR>
 "}}}
 
